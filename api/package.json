@@ -1,19 +1,25 @@
 {
-  "name": "api_trilhas",
+  "name": "backend",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx watch src/server.ts"
   },
-  "author": "equipe_2",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "description": "",
-  "dependencies": {
-    "express": "^4.19.2"
-  },
   "devDependencies": {
-    "@types/express": "^4.17.21",
-    "ts-node-dev": "^2.0.0",
+    "@types/node": "^20.14.5",
+    "prisma": "^5.15.1",
     "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@fastify/cors": "^9.0.1",
+    "@prisma/client": "^5.15.1",
+    "fastify": "^4.28.0",
+    "tsx": "^4.15.6",
+    "yup": "^1.4.0",
+    "zod": "^3.23.8"
   }
 }
