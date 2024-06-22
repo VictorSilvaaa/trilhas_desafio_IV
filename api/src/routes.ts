@@ -8,5 +8,9 @@ export async function routes(fastify: FastifyInstance, options: FastifyPluginOpt
         return  usersController.store(request, reply)
     })
     //update
+    
     //delete
+    fastify.delete("/usuarios/:id", async (request: FastifyRequest, reply: FastifyReply) => {
+        return usersController.delete(request, reply);
+    });
 }
