@@ -14,10 +14,14 @@ datasource db {
 }
 
 model User {
-  id    String @id @default(auto()) @map("_id") @db.ObjectId
-  name  String
-  email String @unique
-  password String
-
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  nome     String
+  data_nascimento DateTime
+  username String
+  genero   String
+  estado  String 
+  cidade   String 
+  email    String @unique
+  senha String
   @@map("usuarios")
 }
