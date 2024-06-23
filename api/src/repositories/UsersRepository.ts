@@ -1,13 +1,16 @@
 // src/repositories/UsersRepository.js
-
-import { SignPrivateKeyInput } from "crypto";
 import { z } from "zod";
 import { PrismaClient } from '@prisma/client';
 
 interface User {
-  name: string,
+  nome: string,
   email: string,
-  password: string
+  username: string,
+  data_nascimento: string,
+  genero: string,
+  estado: string,
+  cidade: string,
+  senha: string,
 }
 class UsersRepository {
 

@@ -6,9 +6,14 @@ import { UsersRepository } from "../repositories/UsersRepository";
 class UsersController {
     async store(request: FastifyRequest, reply: FastifyReply) {
         const userSchema = z.object({
-            name: z.string().min(3).max(50),
+            nome: z.string().min(3).max(50),
             email: z.string().email(),
-            password: z.string().min(8).max(50)
+            username: z.string().min(3).max(50),
+            data_nascimento: z.string(),
+            genero: z.string().max(1),
+            estado: z.string(),
+            cidade: z.string(),
+            senha: z.string().min(8).max(50)
         });
         try{
             let userData = userSchema.parse(request.body);
