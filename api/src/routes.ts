@@ -12,6 +12,9 @@ export async function routes(fastify: FastifyInstance, options: FastifyPluginOpt
     fastify.post("/login", async (request: FastifyRequest, reply: FastifyReply) => {
         return  authController.login(request, reply)
     })
+    fastify.get("/", async (request: FastifyRequest, reply: FastifyReply) => {
+        return  reply.status(200).send("Seja bem Vindo. Api desenvolvida pela equipe 2 trilhas")
+    })
     //update
     //delete
 }
