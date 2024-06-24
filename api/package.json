@@ -14,16 +14,20 @@
   "description": "",
   "devDependencies": {
     "@types/node": "^20.14.5",
+    "@types/ws": "^8.5.10",
     "prisma": "^5.15.1",
     "typescript": "^5.4.5"
   },
   "dependencies": {
     "@fastify/cors": "^9.0.1",
+    "@neondatabase/serverless": "^0.9.3",
+    "@prisma/adapter-neon": "^5.15.1",
     "@prisma/client": "^5.15.1",
     "dotenv": "^16.4.5",
     "fastify": "^4.28.0",
     "mongodb": "^6.7.0",
     "tsx": "^4.15.6",
+    "ws": "^8.17.1",
     "yup": "^1.4.0",
     "zod": "^3.23.8"
   }

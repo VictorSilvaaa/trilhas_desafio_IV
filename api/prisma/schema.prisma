@@ -1,27 +1,45 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "mongodb"
-  url      = env("MONGODB_URI")
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
 }
 
-model User {
-  id       String @id @default(auto()) @map("_id") @db.ObjectId
-  nome     String
-  data_nascimento String
-  username String
-  genero   String
-  estado  String 
-  cidade   String 
-  email    String @unique
-  senha String
-  @@map("usuarios")
+model Usuario {
+  id               String   @id @default(uuid()) @map("_id")
+  nome             String
+  data_nascimento  String
+  username         String   @unique
+  genero           String
+  estado_id        Int
+  cidade_id        Int
+  email            String   @unique
+  senha            String
+
+  estado           Estado   @relation(fields: [estado_id], references: [id])
+  cidade           Cidade   @relation(fields: [cidade_id], references: [id])
+}
+
+model Estado {
+  id               Int       @id @default(autoincrement())
+  titulo           String
+  uf               String    @unique
+  iso              String    @unique
+  slug             String    @unique
+  cidades          Cidade[]
+
+  usuarios         Usuario[]
+}
+
+model Cidade {
+  id               Int       @id @default(autoincrement())
+  titulo           String
+  iso              String    @unique
+  slug             String    @unique
+  estado_id        Int
+
+  estado           Estado    @relation(fields: [estado_id], references: [id])
+  usuarios         Usuario[]
 }

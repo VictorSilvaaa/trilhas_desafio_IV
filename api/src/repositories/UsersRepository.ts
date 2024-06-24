@@ -2,22 +2,25 @@
 import { z } from "zod";
 import { PrismaClient } from '@prisma/client';
 
-interface User {
-  nome: string,
-  email: string,
-  username: string,
-  data_nascimento: string,
-  genero: string,
-  estado: string,
-  cidade: string,
-  senha: string,
+interface Usuario {
+  id?: string;
+  nome: string;
+  //to do: mudar para data_nascimento
+  data_nascimento: string;
+  username: string;
+  genero: string;
+  estado_id: number;
+  cidade_id: number;
+  email: string;
+  senha: string;
 }
 class UsersRepository {
 
   protected prisma = new PrismaClient();
 
-  async createUser(userData: User) {
-    const user = await this.prisma.user.create({data:userData});
+  async createUser(userData: Usuario) {
+    const user = await this.prisma.usuario.create({data:userData});
+    
     return user;
   }
 
@@ -31,7 +34,7 @@ class UsersRepository {
   }
 
   async getUserByEmail(email:string) {
-    const user = await this.prisma.user.findUnique({
+    const user = await this.prisma.usuario.findUnique({
       where: { email:email },
     });
     return user;

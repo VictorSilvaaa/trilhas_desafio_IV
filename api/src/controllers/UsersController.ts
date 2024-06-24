@@ -11,8 +11,9 @@ class UsersController {
             username: z.string().min(3).max(50),
             data_nascimento: z.string(),
             genero: z.string().max(1),
-            estado: z.string(),
-            cidade: z.string(),
+            estado_id: z.number(),
+            cidade_id: z.number(),
+            // to do: realizar hash da senha
             senha: z.string().min(8).max(50)
         });
         try{
