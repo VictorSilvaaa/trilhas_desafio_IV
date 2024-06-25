@@ -1,0 +1,191 @@
+[
+    {
+        "id": "1",
+        "titulo": "Acre",
+        "uf": "AC",
+        "iso": "12",
+        "slug": "acre"
+    },
+    {
+        "id": "2",
+        "titulo": "Alagoas",
+        "uf": "AL",
+        "iso": "27",
+        "slug": "alagoas"
+    },
+    {
+        "id": "3",
+        "titulo": "Amazonas",
+        "uf": "AM",
+        "iso": "13",
+        "slug": "amazonas"
+    },
+    {
+        "id": "4",
+        "titulo": "Amapá",
+        "uf": "AP",
+        "iso": "16",
+        "slug": "amapa"
+    },
+    {
+        "id": "5",
+        "titulo": "Bahia",
+        "uf": "BA",
+        "iso": "29",
+        "slug": "bahia"
+    },
+    {
+        "id": "6",
+        "titulo": "Ceará",
+        "uf": "CE",
+        "iso": "23",
+        "slug": "ceara"
+    },
+    {
+        "id": "7",
+        "titulo": "Distrito Federal",
+        "uf": "DF",
+        "iso": "53",
+        "slug": "distrito-federal"
+    },
+    {
+        "id": "8",
+        "titulo": "Espírito Santo",
+        "uf": "ES",
+        "iso": "32",
+        "slug": "espirito-santo"
+    },
+    {
+        "id": "9",
+        "titulo": "Goiás",
+        "uf": "GO",
+        "iso": "52",
+        "slug": "goias"
+    },
+    {
+        "id": "10",
+        "titulo": "Maranhão",
+        "uf": "MA",
+        "iso": "21",
+        "slug": "maranhao"
+    },
+    {
+        "id": "11",
+        "titulo": "Minas Gerais",
+        "uf": "MG",
+        "iso": "31",
+        "slug": "minas-gerais"
+    },
+    {
+        "id": "12",
+        "titulo": "Mato Grosso do Sul",
+        "uf": "MS",
+        "iso": "50",
+        "slug": "mato-grosso-do-sul"
+    },
+    {
+        "id": "13",
+        "titulo": "Mato Grosso",
+        "uf": "MT",
+        "iso": "51",
+        "slug": "mato-grosso"
+    },
+    {
+        "id": "14",
+        "titulo": "Pará",
+        "uf": "PA",
+        "iso": "15",
+        "slug": "para"
+    },
+    {
+        "id": "15",
+        "titulo": "Paraiba",
+        "uf": "PB",
+        "iso": "25",
+        "slug": "paraiba"
+    },
+    {
+        "id": "16",
+        "titulo": "Pernambuco",
+        "uf": "PE",
+        "iso": "26",
+        "slug": "pernambuco"
+    },
+    {
+        "id": "17",
+        "titulo": "Piauí",
+        "uf": "PI",
+        "iso": "22",
+        "slug": "piaui"
+    },
+    {
+        "id": "18",
+        "titulo": "Paraná",
+        "uf": "PR",
+        "iso": "41",
+        "slug": "parana"
+    },
+    {
+        "id": "19",
+        "titulo": "Rio de Janeiro",
+        "uf": "RJ",
+        "iso": "33",
+        "slug": "rio-de-janeiro"
+    },
+    {
+        "id": "20",
+        "titulo": "Rio Grande do Norte",
+        "uf": "RN",
+        "iso": "24",
+        "slug": "rio-grande-do-norte"
+    },
+    {
+        "id": "21",
+        "titulo": "Rondônia",
+        "uf": "RO",
+        "iso": "11",
+        "slug": "rondonia"
+    },
+    {
+        "id": "22",
+        "titulo": "Roraima",
+        "uf": "RR",
+        "iso": "14",
+        "slug": "roraima"
+    },
+    {
+        "id": "23",
+        "titulo": "Rio Grande do Sul",
+        "uf": "RS",
+        "iso": "43",
+        "slug": "rio-grande-do-sul"
+    },
+    {
+        "id": "24",
+        "titulo": "Santa Catarina",
+        "uf": "SC",
+        "iso": "42",
+        "slug": "santa-catarina"
+    },
+    {
+        "id": "25",
+        "titulo": "Sergipe",
+        "uf": "SE",
+        "iso": "28",
+        "slug": "sergipe"
+    },
+    {
+        "id": "26",
+        "titulo": "São Paulo",
+        "uf": "SP",
+        "iso": "35",
+        "slug": "sao-paulo"
+    },
+    {
+        "id": "27",
+        "titulo": "Tocantins",
+        "uf": "TO",
+        "iso": "17",
+        "slug": "tocantins"
+    }
+]
