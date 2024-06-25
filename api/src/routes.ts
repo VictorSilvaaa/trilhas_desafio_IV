@@ -23,7 +23,9 @@ export async function routes(fastify: FastifyInstance, options: FastifyPluginOpt
           const estados = await estadoRepository.findAll();
           return reply.status(200).send(estados);
         } catch (error) {
-          return reply.status(500).send({ error: 'Erro ao buscar estados' });
+          return reply.status(500).send({ 
+            error: 'Erro ao buscar estados' + error
+            });
         }
     });
 

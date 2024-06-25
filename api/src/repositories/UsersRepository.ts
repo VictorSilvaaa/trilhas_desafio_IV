@@ -25,7 +25,7 @@ class UsersRepository {
   }
 
   async getUserById(userId:number) {
-    const user = await this.prisma.user.findUnique({
+    const user = await this.prisma.usuario.findUnique({
       where: {
         id: `${userId}`,
       },
@@ -40,8 +40,8 @@ class UsersRepository {
     return user;
   }
 
-  async updateUser(id:number, newData:User) {
-    const user = await this.prisma.user.update({
+  async updateUser(id:number, newData:Usuario) {
+    const user = await this.prisma.usuario.update({
       where: { id: `${id}` },
       data: newData,
     });
@@ -49,7 +49,7 @@ class UsersRepository {
   }
 
   async deleteUser(id:number) {
-    const user = await this.prisma.user.delete({
+    const user = await this.prisma.usuario.delete({
       where: { id: `${id}` },
     });
     return user;
