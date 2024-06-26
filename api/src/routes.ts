@@ -15,7 +15,7 @@ export async function routes(fastify: FastifyInstance, options: FastifyPluginOpt
         return  authController.login(request, reply)
     })
     fastify.get("/", async (request: FastifyRequest, reply: FastifyReply) => {
-        return  reply.status(200).send("Seja bem Vindo. Api desenvolvida pela equipe 2 trilhas")
+        return  reply.status(200).send("Seja bem Vindo. Api desenvolvida pela equipe 2 trilhas, repositorio github: https://github.com/VictorSilvaaa/trilhas_desafio_IV ")
     })
 
     fastify.get("/estados", async (request: FastifyRequest, reply: FastifyReply) => {
